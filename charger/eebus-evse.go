@@ -529,7 +529,7 @@ func (c *EEBus) currents() (float64, float64, float64, error) {
 		res = append(res, 0)
 	}
 
-	return res[0], res[1], res[2], nil
+	return res[1], res[2], res[0], nil
 }
 
 var _ api.Identifier = (*EEBus)(nil)
